@@ -1,7 +1,7 @@
 " Name:         Xcode Dark High Contrast
 " Description:  A Vim port of the high contrast dark Xcode 11 colourscheme
 " Author:       Aramis Razzaghipour <aramisnoah@gmail.com>
-" Maintainer:   Aramis Razzaghipour <aramisnoah@gmail.com>
+" Maintainer:   Kaushik Gopal <x@kau.sh>
 " License:      Vim License (see `:help license`)
 " Last Updated: Wed 18 Nov 14:46:29 2020
 
@@ -320,6 +320,9 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
   hi! link markdownUrl Underlined
   hi markdownDelimiter guifg=#83c9bc guibg=NONE gui=NONE cterm=NONE
   hi markdownCode guifg=#e5cfff guibg=#34353b gui=NONE cterm=NONE
+  hi! link mkdHeading Statement
+  hi! link htmlH1 Statement
+  hi! link htmlH2 LibraryIdent
   if g:xcodedarkhc_green_comments
     hi Comment guifg=#8dbf67 guibg=NONE gui=NONE cterm=NONE
     hi SpecialComment guifg=#b8f08d guibg=NONE gui=NONE cterm=NONE
